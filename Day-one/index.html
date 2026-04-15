@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0f172a;
+        font-family: Arial, sans-serif;
+    }
+         .clock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+        padding: 20px 35px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+     .clock span{
+        min-width: 50px;
+        text-align: center;
+    }
+
+    </style>
+    <div class="clock" >
+        <span id="hours">24</span>
+        <span>:</span>
+        <span id="minutes">60</span>
+        <span>:</span>
+        <span id="seconds">60</span>
+    </div>
+    <script src="./clock.js"></script>
+</body>
+</html>

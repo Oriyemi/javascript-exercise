@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        
+       
+    </style>
+</head>
+<body>
+
+    <div class="dice-container"  style="display: flex; justify-content: center; gap: 40px; margin: 30px 0;">
+        <div id="dice1"  style="background: white; padding: 20px; border-radius: 10px;">
+             <img src="./images/dice 1.jpg" alt="dice 1" style="width:100px; height:100px;">
+                <p>Dice 1</p>
+        </div>
+        <div id="dice2"  style="background: white; padding: 20px; border-radius: 10px;">
+            <img src="./images/dice 2.webp" alt="dice 2" style="width:100px; height:100px;">
+                <p id="text">Dice 2</p>
+        </div>
+    </div>
+
+    <button id="rollBtn"  style="padding: 10px 20px; font-size: 16px; background: blue; color: white; border: none; border-radius: 5px; cursor: pointer;">Roll Dice</button>
+
+    <script src="dice.js"></script>
+</body>
+</html>

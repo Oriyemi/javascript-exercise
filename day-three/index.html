@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: Arial, sans-serif;
+        background: rgb(21, 244, 88);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+       .hidden{
+        display: none;
+      }
+
+      header{
+        width: 100%;
+        max-width: 700px;
+        background: white;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+       h1{
+        font-size: 1.2rem;
+        background-color: #0f172a;
+        color: white;
+        padding: 16px 20px;
+        margin-top: 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      h1:first-child{
+        margin-top: 0;
+      }
+        h1:hover{
+        background-color: #1e293b;
+        transform: translateY(-2px);
+      }
+
+      p{
+        background: #f8fafc;
+        color: #334155;
+        line-height: 1.7;
+        padding: 18px 20px;
+        border-radius: 0 0 12px 12px;
+        margin-top: 4px;
+        border-left: 4px solid rgb(43, 231, 43);
+      }
+     </style>
+
+    <header >
+       <h1 id="name" >Name form</h1>
+        <p class="hidden namep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo, repudiandae incidunt aspernatur, sapiente fugiat illum repellendus numquam dicta officiis perspiciatis dolorem esse dolor sed assumenda! Libero tenetur doloremque ipsam!</p>
+       <h1 id="address">Address form</h1>
+       <p class="hidden addressp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo, repudiandae incidunt aspernatur, sapiente fugiat illum repellendus numquam dicta officiis perspiciatis dolorem esse dolor sed assumenda! Libero tenetur doloremque ipsam!</p>
+       <h1 id="job">Job form</h1>
+       <p class="hidden jobp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo, repudiandae incidunt aspernatur, sapiente fugiat illum repellendus numquam dicta officiis perspiciatis dolorem esse dolor sed assumenda! Libero tenetur doloremque ipsam!</p>
+       <h1 id="religion">Religion form</h1>
+       <p class="hidden religionp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo, repudiandae incidunt aspernatur, sapiente fugiat illum repellendus numquam dicta officiis perspiciatis dolorem esse dolor sed assumenda! Libero tenetur doloremque ipsam!</p>
+    </header>
+    
+    <script src="./accordion.js"></script>
+</body>
+</html>

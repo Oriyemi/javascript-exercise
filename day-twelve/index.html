@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-do</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background: #6a0dad;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.complete{
+    text-decoration: line-through;
+    
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    margin-top:8px;
+    padding:5px;
+    background:#f3f3f3;
+    border-radius:5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container" style="background:white; padding:25px; width:320px; border-radius:10px; ">
+
+    <div class="to-do">
+
+        <h2 style="text-align:center;">To-do list</h2>
+
+        <div style="display:flex; gap:5px; margin-bottom:15px;">
+            <input id="input-box" placeholder="Add your items"
+                style="flex:1; padding:8px; border:1px solid #ccc; border-radius:5px;">
+
+            <button onclick="addTask()"
+                style="padding:8px 12px; background:#6a0dad; color:white; border:none; border-radius:5px; cursor:pointer;">
+                Add
+            </button>
+        </div>
+
+        <ul class="task-list" style="list-style:none; padding:0;"></ul>
+
+    </div>
+
+</div>
+
+<script src="./to-do.js"></script>
+
+</body>
+</html>

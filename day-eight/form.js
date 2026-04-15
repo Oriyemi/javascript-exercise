@@ -1,0 +1,1 @@
+//**Form Validator: Trigger error messages if an email is missing an @ or if a password is under 8 characters upon submission. */ 
